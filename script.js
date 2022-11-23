@@ -48,7 +48,7 @@ const addProductToOrder = ()=> {
     let product = JSON.parse(productSelect);
     userCart.push(product);
     console.log(userCart);
-    document.getElementById('order_error').innerHTML = "Product added to order!";
+    document.getElementById('order_error').innerHTML = `Product added to order! Total Products: ${userCart.length}`;
 }
 
 const addOrder = async ()=> {
